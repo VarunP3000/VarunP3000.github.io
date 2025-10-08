@@ -26,18 +26,18 @@ const PROJECTS: Project[] = [
     tags: ["Python", "pandas", "Machine Learning", "Git/GitHub"],
     github: "https://github.com/VarunP3000/ConfidenceScoringProject", // TODO replace with repo link
     description:
-      "End-to-end pipeline to score LLM outputs with confidence thresholds and calibration. CSV→prompt ingestion, chained calls, and confidence scoring with tunable thresholds. Compared raw vs calibrated confidence using ECE/accuracy and simple prompt/model ensembling. Interfaces split across Node.js orchestration and Python scoring with reproducible metrics.",
+      "Built an end-to-end pipeline that scores LLM outputs with calibrated confidence. I ingest CSVs into prompts, chain model calls, and compute confidence scores with tunable thresholds. I compare raw versus calibrated predictions using ECE and accuracy, and I support simple prompt/model ensembling. The system separates orchestration in Node.js from scoring in Python so results are reproducible and easy to extend.",
     skills: ["Python", "Node.js", "TypeScript", "pandas", "Metrics"],
   },
   {
     id: "stock-fullstack-cpi-spx",
-    title: "Stock Market Prediction — Full‑Stack (CPI → S&P 500)",
+    title: "Stock Market Prediction — Full-Stack (CPI → S&P 500)",
     year: 2025,
     topics: ["AI/ML", "Full-Stack"],
     tags: ["Python", "scikit-learn", "pandas", "Machine Learning", "Git/GitHub"],
     github: "https://github.com/VarunP3000/stock-cost-of-living-app", // TODO replace with repo link
     description:
-      "Full-stack forecasting app linking CPI features to S&P 500 returns. FastAPI backend serves regression/ensemble endpoints with backtesting; Next.js frontend provides scenario exploration with adjustable weights. Focus on clear API contracts, CORS-safe deployment, and readable plots/metrics.",
+      "Designed a full-stack forecasting app that links CPI features to subsequent S&P 500 returns. The FastAPI backend serves regression and ensemble endpoints with backtesting and quantile outputs. A Next.js front end lets users run scenarios and adjust model weights. I emphasized clear API contracts, CORS-safe deployment, and readable metrics and plots.",
     skills: ["Python", "FastAPI", "scikit-learn", "pandas", "React", "Next.js", "TypeScript"],
   },
 
@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
     tags: ["Java", "Data Structures", "JUnit/Testing", "Performance Optimization"],
     github: "https://github.com/VarunP3000/DataStructures-Algorithms/tree/main/src/main/java/deques",
     description:
-      "Built a circular-array deque with wraparound front/back indices and amortized resizing; fixed a tricky resize/wrap bug uncovered by failing tests. Implemented a sentinel‑based doubly‑linked deque (two sentinels) guaranteeing O(1) add/remove at both ends. Benchmarked against an ArrayList‑backed deque and explained O(1) deque removes vs O(n) ArrayList.remove(0).",
+      "Implemented a circular-array deque with wraparound indices and amortized resizing, then fixed a tricky wrap/resize bug surfaced by failing tests. I also built a sentinel-based doubly linked deque that guarantees O(1) adds and removes at both ends. Finally, I benchmarked against an ArrayList-backed deque and explained why deque removes are O(1) while ArrayList.remove(0) is O(n), writing edge-case tests to lock in the behavior.",
     skills: ["Java", "JUnit", "Data Structures"],
   },
   {
@@ -61,7 +61,7 @@ const PROJECTS: Project[] = [
     tags: ["Java", "Data Structures", "Algorithms", "JUnit/Testing"],
     github: "https://github.com/VarunP3000/DataStructures-Algorithms/tree/main/src/main/java/autocomplete",
     description:
-      "Implemented SequentialSearchAutocomplete (linear scan) and BinarySearchAutocomplete (sorted list + Collections.binarySearch + rightward sweep). Built TernarySearchTreeAutocomplete using TST nodes (left/mid/right) with end‑of‑term markers and DFS collect. Compared to a TreeSet baseline (NavigableSet.ceiling/tailSet) with targeted tests and worst‑ vs average‑case analysis.",
+      "Built two baseline autocompletes: a sequential scan and a binary-search-based approach over a sorted list. Then I implemented a Ternary Search Tree (TST) autocomplete with end-of-term markers and a DFS collector for results. I compared all variants against a TreeSet baseline, added unit tests for simple and adversarial cases, and analyzed worst-case versus average-case lookup costs.",
     skills: ["Java", "Algorithms", "Testing"],
   },
   {
@@ -72,7 +72,7 @@ const PROJECTS: Project[] = [
     tags: ["Java", "Data Structures", "Algorithms", "Performance Optimization", "JUnit/Testing"],
     github: "https://github.com/VarunP3000/DataStructures-Algorithms/tree/main/src/main/java/minpq",
     description:
-      "Wrote UnsortedArrayMinPQ with PriorityNode pairs (linear contains/changePriority; min scan for peekMin/removeMin). Implemented HeapMinPQ via java.util.PriorityQueue and a remove‑then‑reinsert changePriority. Designed an optimized heap + index map achieving near O(log n) changePriority and fast membership checks; contrasted with DoubleMapMinPQ reference.",
+      "Implemented UnsortedArrayMinPQ using PriorityNode pairs with linear membership and change-priority and a min scan for removal. I then built HeapMinPQ using java.util.PriorityQueue and handled changePriority by remove-then-reinsert. Finally, I designed an optimized binary heap with an index map to achieve near O(log n) changePriority and fast membership, and contrasted it with a DoubleMapMinPQ reference under benchmarks.",
     skills: ["Java", "Priority Queues", "Performance"],
   },
   {
@@ -83,7 +83,7 @@ const PROJECTS: Project[] = [
     tags: ["Java", "Graphs", "Dynamic Programming", "Shortest Paths", "Algorithms"],
     github: "https://github.com/VarunP3000/DataStructures-Algorithms/tree/main/src/main/java/graphs",
     description:
-      "Built two seam‑graph representations: AdjacencyListSeamFinder (materialized Pixel[][] with edges) and GenerativeSeamFinder (neighbors on demand). Implemented ToposortDAGSolver (DFS postorder → relax in topo order) and used Dijkstra; also worked with Bellman‑Ford, SPFA, and A* APIs. Added a pure DP seam finder and compared runtime/allocations across five approaches.",
+      "Constructed two seam-graph representations: a materialized adjacency list of pixels and a generative graph that yields neighbors on demand. I implemented a DAG topological solver (DFS postorder followed by relax) and used Dijkstra; I also worked with Bellman-Ford, SPFA, and A*. I added a pure dynamic-programming seam finder and compared runtime and allocations across all five approaches.",
     skills: ["Java", "Graphs", "DP"],
   },
 
@@ -96,7 +96,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "scikit-learn", "pandas", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/hw0.ipynb",
     description:
-      "Prepared tabular data (imputation/encoding/splits); established linear baselines and regularized models. Tuned hyperparameters on validation and monitored RMSE on train/val/test to check generalization and avoid leakage. Interpreted coefficients and summarized failure modes.",
+      "Prepared a tabular dataset with careful imputation, encoding, and train/validation/test splits. I established linear baselines and regularized models and tuned hyperparameters using validation curves. I monitored RMSE to check generalization and potential leakage, and I interpreted coefficients to explain feature effects and failure modes.",
     skills: ["Python", "scikit-learn", "pandas"],
   },
   {
@@ -107,7 +107,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "scikit-learn", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/Ridge%26Lasso.ipynb",
     description:
-      "Engineered polynomial/sqrt features and standardized the design matrix. Performed alpha (lambda) sweeps with validation curves; contrasted Ridge shrinkage vs LASSO sparsity on held‑out RMSE. Visualized coefficient paths and non‑zero patterns.",
+      "Engineered polynomial and square-root features and standardized the design matrix inside reproducible pipelines. I swept α (λ) values and plotted validation curves to select regularization strength. I contrasted Ridge shrinkage against LASSO sparsity on held-out RMSE and visualized coefficient paths to discuss bias–variance trade-offs.",
     skills: ["Python", "scikit-learn"],
   },
   {
@@ -118,7 +118,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "scikit-learn", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/SentimentAnalysisWithLogisticRegression.ipynb",
     description:
-      "Cleaned reviews, built bag‑of‑words features with CountVectorizer, and split into train/val/test. Trained logistic regression (baseline = majority class), reported accuracy/confusion matrix, and produced class probabilities. Explored L2 regularization and identified most positive/negative terms.",
+      "Cleaned Amazon review text and built bag-of-words features using CountVectorizer with an appropriate train/validation/test split. I trained logistic regression (with the majority-class baseline for context) and reported accuracy, a confusion matrix, and class probabilities. I explored L2 regularization, traced important coefficients, and highlighted the most positive and negative terms.",
     skills: ["Python", "scikit-learn"],
   },
   {
@@ -129,29 +129,29 @@ const PROJECTS: Project[] = [
     tags: ["Python", "scikit-learn", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/LoanSafety.ipynb",
     description:
-      "One‑hot encoded categorical fields; addressed class imbalance; tuned depth/min‑samples via GridSearchCV. Implemented bootstrap aggregation for a custom Random Forest. Plotted learning curves and importances; compared high‑variance trees vs lower‑variance forest.",
+      "One-hot encoded categorical fields and addressed class imbalance while creating robust splits. I tuned decision-tree depth and minimum sample parameters via GridSearchCV and implemented a custom Random Forest with bootstrap aggregation. I plotted learning curves and feature importances and compared a high-variance tree to a lower-variance forest.",
     skills: ["Python", "scikit-learn"],
   },
   {
     id: "c416-cifar10",
-    title: "CIFAR‑10 Image Classification (Net A/B/C/D)",
+    title: "CIFAR-10 Image Classification (Net A/B/C/D)",
     year: 2025,
     topics: ["AI/ML", "Deep Learning"],
     tags: ["Python", "PyTorch", "Deep Learning", "Neural Networks"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/DeepLearning.ipynb",
     description:
-      "Implemented MLP and CNN variants (conv → ReLU → pooling → dropout) with efficient data loaders and augmentations. Trained on GPU, tracked accuracy/loss per epoch, applied early stopping and LR scheduling, and examined misclassifications to guide tweaks.",
+      "Implemented several architectures ranging from MLPs to deeper CNN stacks using PyTorch with efficient data loaders and augmentations. I trained on GPU, tracked accuracy and loss per epoch, and used early stopping and learning-rate scheduling. I reached the target validation accuracy and examined misclassifications to guide further tweaks.",
     skills: ["PyTorch", "Python"],
   },
   {
     id: "c416-kmeans-tfidf",
-    title: "K‑Means from Scratch (Wikipedia, TF‑IDF)",
+    title: "K-Means from Scratch (Wikipedia, TF-IDF)",
     year: 2025,
     topics: ["AI/ML", "Unsupervised"],
     tags: ["Python", "NumPy", "Clustering", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/KMeansWithTextData.ipynb",
     description:
-      "Implemented assignment/recompute loop with inertia/heterogeneity metrics and convergence checks. Added k‑means++ initialization and multiple restarts; evaluated K via elbow/heterogeneity trends. Clustered TF‑IDF features and interpreted clusters via top‑weight terms.",
+      "Implemented k-means from scratch with the standard assign-and-recompute loop, inertia metrics, and convergence checks. I added k-means++ initialization and multiple random restarts to improve stability. I evaluated K via elbow and heterogeneity trends, clustered TF-IDF features, and interpreted clusters by top-weight terms and examples.",
     skills: ["Python", "NumPy"],
   },
   {
@@ -162,7 +162,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "NMR/Topic Modeling", "Machine Learning"],
     github: "https://github.com/VarunP3000/PythonAI-MLProjects/blob/main/RecommendationWithText.ipynb",
     description:
-      "Vectorized cleaned tweets with TF‑IDF (stopwords, lowercasing, punctuation removal). Factorized with NMF (k=5 then k=3), extracted top words per topic, mapped tweet→topic weights, and identified an outlier cluster along Topic 2; discussed themes.",
+      "Vectorized cleaned tweets with TF-IDF, including stopword handling, case normalization, and punctuation removal. I factorized the matrix using NMF with k=5 and k=3, extracted top words per topic, and mapped tweet-to-topic weights. I identified the dominant topic per tweet, surfaced an outlier cluster along one topic dimension, and summarized the themes.",
     skills: ["Python", "scikit-learn"],
   },
 
@@ -175,7 +175,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "tidyverse"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps01.R",
     description:
-      "Computed derived quantities (seconds/year, age in seconds, relativistic mass), practiced boolean logic, manipulated text with stringr, and wrote parameterized functions with defaults (e.g., greeting, RemoveDigits). Implemented classic loops and validated results.",
+      "Wrote small R programs that compute derived quantities and practice boolean logic, string manipulation, and basic functions. I used stringr for templating, replacement, casing, and character counts. I implemented classic loops such as running sums and factorials, formatted outputs, and validated results with simple checks.",
     skills: ["R", "stringr"],
   },
   {
@@ -186,7 +186,7 @@ const PROJECTS: Project[] = [
     tags: ["R"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps02.R",
     description:
-      "Built and sliced numeric/character vectors; applied vectorized transforms and logical indexing. Designed a Student Support calculator via vectorized conditions and named vectors; used lists for structured data and wrote a dice simulator with a test hook.",
+      "Practiced vector creation, slicing, and fully vectorized transforms using base R. I designed a student-support calculator with named vectors and logical indexing to allocate awards. I also used lists for structured data and wrote a dice simulator with a test hook to verify behavior.",
     skills: ["R"],
   },
   {
@@ -197,7 +197,7 @@ const PROJECTS: Project[] = [
     tags: ["R"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps03.Rmd",
     description:
-      "Authored an RMarkdown report (lists, code blocks, images); explained working directories and rendered reproducible output. Enumerated files with list.files/file.info and generated type‑aware sentences; classified files by extension with concise ifelse pipelines.",
+      "Authored a reproducible R Markdown report that mixes narrative with code and images. I explained working directories and relative paths and demonstrated file enumeration with list.files and file.info. I classified files by extension using concise ifelse pipelines and showcased inline code within the report.",
     skills: ["R", "RMarkdown"],
   },
   {
@@ -208,7 +208,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "tidyverse"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps04.Rmd",
     description:
-      "Analyzed life‑expectancy data (NA tallies, per‑country growth, regional summaries) and built labeled scatterplots. Cleaned NYC flights, analyzed delays to SEA, worst destinations, monthly trends, and derived mph speeds with sanity checks.",
+      "Analyzed life-expectancy data by tallying missing values, computing per-country growth, and summarizing by region. I built labeled scatterplots and demonstrated the equivalence of mean-of-differences and difference-of-means using tidy verbs. I also cleaned NYC flights, analyzed delays to SEA, surfaced monthly trends, and derived mph speeds with sanity checks.",
     skills: ["R", "tidyverse", "ggplot2"],
   },
   {
@@ -219,7 +219,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "tidyverse"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps05.html",
     description:
-      "Audited country identifiers (ISO‑2/3, names); contrasted total vs per‑capita emissions across USA/CHN/IND/JPN/BRA; computed regional means (1960 vs 2016). Modeled orange tree growth using lag; traced country paths with ggplot2 and geom_path.",
+      "Audited country identifiers across ISO-2, ISO-3, and names and diagnosed Namibia’s missing ISO-2 due to the “NA” sentinel. I contrasted total versus per-capita CO₂ emissions across major countries and computed regional means for 1960 and 2016 with tidyverse tools. I modeled orange tree growth using lag, plotted continent-level life-expectancy means, and traced country paths with ggplot2.",
     skills: ["R", "tidyverse", "ggplot2"],
   },
   {
@@ -230,7 +230,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "tidyverse"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/INFO201ps06.Rmd",
     description:
-      "Cleaned Scripps monthly CO2 and created a continuous time axis; computed anomaly vs a pre‑industrial baseline from HadCRUT; merged yearly CO2 with temperature anomalies; compared UAH vs surface temps with decade‑colored trends.",
+      "Cleaned Scripps monthly CO₂ data, removed implausible rows, and created a continuous time axis to visualize the long-term rise. I derived a pre-industrial baseline from HadCRUT and plotted temperature anomalies relative to that baseline. I aggregated CO₂ to yearly means, merged with surface and satellite temperature anomalies, and compared decade-colored trend lines.",
     skills: ["R", "tidyverse", "ggplot2"],
   },
   {
@@ -241,7 +241,7 @@ const PROJECTS: Project[] = [
     tags: ["R"],
     github: "https://github.com/VarunP3000/RDataScienceProjects/blob/main/Info201Assignments/InfoLab5.Rmd",
     description:
-      "Built a Seahawks results data frame with engineered features; loaded HR salaries to compute raises and identify max raise; demonstrated vectorized arithmetic, logical filters, and tidy printing for quick EDA.",
+      "Built a tidy data frame of Seahawks results, engineered a margin and win indicator, and performed targeted subsetting. I loaded HR salaries and computed raises, counted recipients, and identified the maximum raise and the corresponding employee. I demonstrated vectorized arithmetic, logical filters, and tidy printing for quick exploratory analysis.",
     skills: ["R"],
   },
   {
@@ -252,20 +252,20 @@ const PROJECTS: Project[] = [
     tags: ["R", "tidyverse"],
     github: "https://github.com/mojipao/Stock-Market-Retirement",
     description:
-      "Structured a reproducible R project with data ingestion, tidy transforms, and clearly labeled plots in RMarkdown. Implemented time‑series style computations and yearly aggregations for retirement planning; documented assumptions and repo organization.",
+      "Structured a reproducible R project for retirement-style stock analysis using tidy ingestion, transformations, and clearly labeled plots. I assembled the work in an R Markdown report with transparent assumptions. I implemented yearly aggregations and time-series style computations and organized the repository for easy review and extension.",
     skills: ["R", "tidyverse", "RMarkdown"],
   },
 
   // STAT/BIOSTAT 534 — Statistical Computing (UW)
   {
     id: "s534-hw1-bayes-lm",
-    title: "Bayesian Linear Models: Log‑Determinant & Marginal Likelihood",
+    title: "Bayesian Linear Models: Log-Determinant & Marginal Likelihood",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["R", "Statistical Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/Stat534HW1",
     description:
-      "Implemented eigendecomposition‑based logdet and closed‑form log marginal likelihood pipelines for normal linear regression with conjugate priors. Verified on estrogen‑receptor data and reproduced textbook examples.",
+      "Implemented eigendecomposition-based log-determinant and a closed-form marginal-likelihood pipeline for conjugate normal linear models. I built the full computation for arbitrary predictor subsets on centered and standardized designs. I verified results on the estrogen-receptor dataset and reproduced textbook examples with matching numeric values.",
     skills: ["R", "Matrix Algebra"],
   },
   {
@@ -276,7 +276,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "Statistical Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/Stat534HW2",
     description:
-      "Wrapped glm(binomial) with convergence/NA guards; computed AIC/BIC; implemented forward/backward greedy searches that add/remove one predictor minimizing AIC. Applied to a 60‑feature dataset; aligned forward AIC and BIC selections.",
+      "Wrote AIC/BIC helpers and robust glm wrappers that handle convergence and missing data. I implemented forward and backward greedy searches that add or remove one predictor to minimize AIC, including a safe-skip mechanism for non-convergent fits. On a 60-feature dataset, the forward AIC reached a compact model and closely aligned with forward BIC selections.",
     skills: ["R"],
   },
   {
@@ -287,7 +287,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "Statistical Computing", "Bayesian Methods"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/Stat534HW3",
     description:
-      "Implemented MC3 subset selection with add/remove‑one neighbors; filtered valid models via rcdd linearity checks to avoid separation. Used neighbor‑count‑corrected MH and ran multiple chains to compare best subsets/AICs vs greedy search.",
+      "Implemented MC3 subset selection over add/remove-one neighborhoods and filtered valid models using rcdd linearity checks to avoid separation. I used a Metropolis–Hastings scheme with neighbor-count correction and ran multiple chains. I compared the best subsets and AICs against the greedy approach from HW2 for stability.",
     skills: ["R", "MCMC"],
   },
   {
@@ -298,7 +298,7 @@ const PROJECTS: Project[] = [
     tags: ["R", "Statistical Computing", "Bayesian Methods", "Parallel Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/hwk4",
     description:
-      "Found posterior modes via Newton–Raphson under N(0,1) priors; computed Laplace log‑evidence and built an MH sampler seeded at the mode. Parallelized 60 univariate fits; summarized posterior means and compared with MLE checks.",
+      "Found the posterior mode for univariate logistic regression under N(0,1) priors using Newton–Raphson. I computed a Laplace approximation to the evidence and built an MH sampler initialized at the mode, recording acceptance on the log scale. I parallelized 60 fits with snow and summarized posterior means with optional MLE sanity checks.",
     skills: ["R", "snow", "MASS"],
   },
   {
@@ -309,18 +309,18 @@ const PROJECTS: Project[] = [
     tags: ["C/C++", "LAPACK", "GSL", "Statistical Computing", "Makefiles", "Performance Optimization"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/hwk5",
     description:
-      "Two high‑performance implementations of log marginal likelihood for [1|A]: LAPACKE (dposv solve; log‑det via eigens) and GSL (LU with lndet). Engineered GEMM/identity‑add/solve/log‑det with careful memory ownership; matched R baseline.",
+      "Implemented two high-performance versions of the linear-model marginal likelihood in C/C++: one using LAPACKE and one using GSL. I engineered GEMM, identity-add, solve, and log-det computations with careful memory ownership and row/column-major handling. The implementations matched an R baseline and passed the spec check for a known subset.",
     skills: ["C/C++", "LAPACK/LAPACKE", "GSL", "Make"],
   },
   {
     id: "s534-hw6-rec-det-topk",
-    title: "Recursive Determinant & Top‑K Regression Search",
+    title: "Recursive Determinant & Top-K Regression Search",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["C/C++", "LAPACK", "Algorithms", "Statistical Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/hwk6",
     description:
-      "Coded a pure recursive determinant via Laplace expansion with disciplined memory cleanup; evaluated on 10×10 banded matrices. Extended AddRegression to maintain a descending‑likelihood singly linked list with de‑duplication and tail trims for top‑K.",
+      "Coded a pure recursive determinant using Laplace expansion with exact base cases and disciplined memory cleanup. I extended a data structure to maintain a descending-likelihood singly linked list with de-duplication and a bounded size for top-K models. I enumerated all ≤2-predictor models on a benchmark dataset and wrote the top results to disk.",
     skills: ["C/C++", "Algorithms"],
   },
   {
@@ -331,7 +331,7 @@ const PROJECTS: Project[] = [
     tags: ["C/C++", "GSL", "Statistical Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/hwk7",
     description:
-      "Computed empirical covariance Σ, built an MVN sampler using Cholesky (Σ = ΨΨᵀ), drew Z~N(0,I), and formed X=ΨZ via BLAS. Simulated 10k draws and compared sample covariance to Σ as a correctness check; shipped portable Makefiles and utilities.",
+      "Computed the empirical covariance matrix from a real dataset and used a Cholesky factorization to sample from a multivariate normal. I generated standard-normal draws, transformed them via BLAS operations, and reconstructed samples with the correct covariance. I simulated 10,000 draws, recomputed the sample covariance, and compared it elementwise to the target as a correctness check.",
     skills: ["C/C++", "GSL", "BLAS"],
   },
   {
@@ -342,7 +342,7 @@ const PROJECTS: Project[] = [
     tags: ["C/C++, MPI", "Parallel Computing"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/Stat534Final",
     description:
-      "13‑process simulation: referee (rank 0) and 12 players; ball passed via point‑to‑point messages. Encoded serve/rally probabilities with a three‑hit cap and uniform teammate/opponent selection via GSL RNG. Referee handled scoring and set logic; logged events; portable mpic++ Makefile.",
+      "Built a 13-process volleyball simulation with a referee and twelve players that pass a “ball” by point-to-point messages. I encoded serve and rally probabilities with a three-hit cap, used a GSL RNG for uniform selection, and defined compact message payloads and event reports. The referee implemented scoring and set logic (to 25, win-by-2; best-of-five), logged actions, and terminated players cleanly with a portable mpic++ Makefile.",
     skills: ["C/C++", "MPI", "Make"],
   },
 ];
@@ -477,7 +477,7 @@ export default function PortfolioSite(): JSX.Element {
           </div>
           <div className="md:col-span-2 prose prose-zinc dark:prose-invert max-w-none">
             <p>
-              I’m an undergraduate at the University of Washington studying Informatics (ML specialization) and ACMS (Data Science & Statistics). I enjoy building practical ML systems, clear APIs, and interfaces that explain model behavior. My work spans data engineering, time-series forecasting, uncertainty/confidence scoring, and full-stack development.
+              My name is Varun Panuganti. I am an undergraduate at the University of Washington studying Informatics (ML specialization) and ACMS (Data Science & Statistics). I enjoy building practical ML systems, clear APIs, and interfaces that explain model behavior. My work spans data engineering, time-series forecasting, uncertainty/confidence scoring, and full-stack development.
             </p>
             <p>
               Languages & tools I use most: Python, C/C++, Java, R, SQL, JavaScript/TypeScript, React/Next.js; PyTorch, scikit-learn, pandas, NumPy; BLAS/LAPACK; Flask/FastAPI; MPI; GitHub and testing frameworks.
