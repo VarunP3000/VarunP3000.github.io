@@ -479,7 +479,7 @@ export default function PortfolioSite(): JSX.Element {
           </div>
           <div className="md:col-span-2 prose prose-zinc dark:prose-invert max-w-none">
             <p>
-            I’m Varun Panuganti, an undergraduate at the University of Washington studying Informatics and ACMS (Data Science & Statistics). I am passionate about studying how data and mathematics can be used to make decisions, and using my software engineering skills to efficiently build products that reflect this. I’m currently seeking internships where I can apply my extensive background in Math/Statistics, AI/ML and Data Science, and Software Engineering to build meaningful products.
+              My name is Varun Panuganti. I am an undergraduate at the University of Washington studying Informatics (ML specialization) and ACMS (Data Science & Statistics). I enjoy building practical ML systems, clear APIs, and interfaces that explain model behavior. My work spans data engineering, time-series forecasting, uncertainty/confidence scoring, and full-stack development.
             </p>
             <p>
               Languages & tools I use most: Python, C/C++, Java, R, SQL, JavaScript/TypeScript, React/Next.js; PyTorch, scikit-learn, pandas, NumPy; BLAS/LAPACK; Flask/FastAPI; MPI; GitHub and testing frameworks.
