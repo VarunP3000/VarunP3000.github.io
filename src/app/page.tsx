@@ -462,6 +462,8 @@ export default function PortfolioSite(): JSX.Element {
           <a href="#about" className="font-semibold tracking-tight">Varun Panuganti</a>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
             <a href="#about" className="hover:opacity-80">About</a>
+            <a href="#education" className="hover:opacity-80">Education</a>
+            <a href="#experience" className="hover:opacity-80">Experience</a>
             <a href="#projects" className="hover:opacity-80">Projects</a>
             <a href="#contact" className="hover:opacity-80">Contact</a>
             <a href="/Varun_Panuganti_OG_Resume.pdf" className="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900">Resume</a>
@@ -487,6 +489,60 @@ export default function PortfolioSite(): JSX.Element {
               <a href="https://github.com/VarunP3000" target="_blank" className="rounded-2xl px-4 py-2 border hover:bg-zinc-50 dark:hover:bg-zinc-900">GitHub</a>
               <a href="https://linkedin.com/in/varun-panuganti" target="_blank" className="rounded-2xl px-4 py-2 border hover:bg-zinc-50 dark:hover:bg-zinc-900">LinkedIn</a>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Education */}
+      <Section id="education" title="Education">
+        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <img
+                src="/UW_logo.png"
+                alt="University of Washington logo"
+                className="h-10 w-10 object-contain rounded"
+              />
+              <div>
+                <div className="text-base font-semibold">University of Washington (Seattle Campus)</div>
+                <div className="text-sm text-zinc-600 dark:text-zinc-400">
+                  Double Degree: Informatics (BS) &amp; ACMS (Data Science and Statistics) (BS)
+                </div>
+              </div>
+            </div>
+            <div className="text-sm">GPA: <span className="font-medium">3.77</span></div>
+          </div>
+          <div className="mt-3">
+            <a href="/transcript.pdf" className="text-sm underline underline-offset-4">View Transcript</a>
+          </div>
+        </div>
+      </Section>
+
+      {/* Experience */}
+      <Section id="experience" title="Work Experience">
+        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <img
+                src="/iCode_Logo.jpg"
+                alt="ICODE logo"
+                className="h-10 w-10 object-contain rounded"
+              />
+              <div>
+                <div className="text-base font-semibold">ICODE</div>
+                <div className="text-sm text-zinc-600 dark:text-zinc-400">Sammamish, WA</div>
+              </div>
+            </div>
+            <div className="text-sm">July 2024 – April 2025</div>
+          </div>
+          <ul className="mt-3 list-disc pl-5 space-y-1 text-sm">
+            <li>Guided students in designing self-driving robots using VEX and sensors, culminating in a robot that consistently navigated a maze.</li>
+            <li>Mentored K–12 students in game development with Python (Pygame) and Unreal Engine, helping them build a 90%-complete racing game with AI opponents and physics simulation.</li>
+            <li>Instructed Java fundamentals (OOP, recursion, algorithms, and data structures), leading students to develop a Spring-based application for data processing and visualization.</li>
+          </ul>
+          <div className="mt-3 text-sm">
+            Supervisor: <span className="font-medium">Rhett Davis</span>{" "}
+            <span className="text-zinc-600 dark:text-zinc-400">+1 425-281-3217</span>
           </div>
         </div>
       </Section>
