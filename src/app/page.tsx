@@ -169,7 +169,7 @@ const PROJECTS: Project[] = [
   // INFO 201 — Data Science & Informatics Foundations (R)
   {
     id: "info201-ps01-basicr",
-    title: "PS01 — Basic R (variables, logic, strings, loops, functions)",
+    title: "Basic R (variables, logic, strings, loops, functions)",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R", "tidyverse"],
@@ -180,7 +180,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-ps02-vectors",
-    title: "PS02 — Vectors, Vectorization & Lists",
+    title: "Vectors, Vectorization & Lists",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R"],
@@ -191,7 +191,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-ps03-rmd",
-    title: "PS03 — R Markdown, Filesystems & Control Flow",
+    title: "R Markdown, Filesystems & Control Flow",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R"],
@@ -202,7 +202,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-ps04-lifeexp-flights",
-    title: "PS04 — Life Expectancy & NYC Flights",
+    title: "Life Expectancy & NYC Flights",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R", "tidyverse"],
@@ -213,7 +213,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-ps05-co2-gapminder",
-    title: "PS05 — CO2, Gapminder & Fertility vs Life Expectancy",
+    title: "CO2, Gapminder & Fertility vs Life Expectancy",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R", "tidyverse"],
@@ -224,7 +224,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-ps06-co2-temp",
-    title: "PS06 — CO2 vs Temperature (Scripps, HadCRUT, UAH)",
+    title: "CO2 vs Temperature (Scripps, HadCRUT, UAH)",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R", "tidyverse"],
@@ -235,7 +235,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "info201-infolab5",
-    title: "InfoLab5 — Data Frames, Subsetting & Simple Analytics",
+    title: "Data Frames, Subsetting & Simple Analytics",
     year: 2024,
     topics: ["Data Science", "R"],
     tags: ["R"],
@@ -259,7 +259,7 @@ const PROJECTS: Project[] = [
   // STAT/BIOSTAT 534 — Statistical Computing (UW)
   {
     id: "s534-hw1-bayes-lm",
-    title: "HW1 — Bayesian Linear Models: Log‑Determinant & Marginal Likelihood",
+    title: "Bayesian Linear Models: Log‑Determinant & Marginal Likelihood",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["R", "Statistical Computing"],
@@ -270,7 +270,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw2-greedy-logistic",
-    title: "HW2 — Greedy Variable Selection for Logistic Regression",
+    title: "Greedy Variable Selection for Logistic Regression",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["R", "Statistical Computing"],
@@ -281,7 +281,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw3-mc3",
-    title: "HW3 — Stochastic Model Selection via MC3",
+    title: "Stochastic Model Selection via MC3",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["R", "Statistical Computing", "Bayesian Methods"],
@@ -292,7 +292,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw4-laplace-mh",
-    title: "HW4 — Bayesian Univariate Logistic Regression (Laplace + MH)",
+    title: "Bayesian Univariate Logistic Regression (Laplace + MH)",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["R", "Statistical Computing", "Bayesian Methods", "Parallel Computing"],
@@ -303,7 +303,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw5-marglik-cpp",
-    title: "HW5 — Marginal Likelihood for Linear Regression (C/C++: LAPACK & GSL)",
+    title: "Marginal Likelihood for Linear Regression (C/C++: LAPACK & GSL)",
     year: 2025,
     topics: ["Statistical Computing", "Systems"],
     tags: ["C/C++", "LAPACK", "GSL", "Statistical Computing", "Makefiles", "Performance Optimization"],
@@ -314,7 +314,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw6-rec-det-topk",
-    title: "HW6 — Recursive Determinant & Top‑K Regression Search",
+    title: "Recursive Determinant & Top‑K Regression Search",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["C/C++", "LAPACK", "Algorithms", "Statistical Computing"],
@@ -325,7 +325,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-hw7-mvn-cov",
-    title: "HW7 — Multivariate Normal Sampling & Covariance Estimation",
+    title: "Multivariate Normal Sampling & Covariance Estimation",
     year: 2025,
     topics: ["Statistical Computing"],
     tags: ["C/C++", "GSL", "Statistical Computing"],
@@ -336,7 +336,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "s534-final-mpi-volleyball",
-    title: "Final — MPI Volleyball Match Simulator",
+    title: "MPI Volleyball Match Simulator",
     year: 2025,
     topics: ["Systems", "Parallel"],
     tags: ["C/C++, MPI", "Parallel Computing"],
