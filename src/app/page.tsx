@@ -542,7 +542,6 @@ export default function PortfolioSite(): JSX.Element {
           </ul>
           <div className="mt-3 text-sm">
             Supervisor: <span className="font-medium">Rhett Davis</span>{" "}
-            <span className="text-zinc-600 dark:text-zinc-400">+1 425-281-3217</span>
           </div>
         </div>
       </Section>
