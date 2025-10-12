@@ -345,6 +345,84 @@ const PROJECTS: Project[] = [
       "Built a 13-process volleyball simulation with a referee and twelve players that pass a “ball” by point-to-point messages. I encoded serve and rally probabilities with a three-hit cap, used a GSL RNG for uniform selection, and defined compact message payloads and event reports. The referee implemented scoring and set logic (to 25, win-by-2; best-of-five), logged actions, and terminated players cleanly with a portable mpic++ Makefile.",
     skills: ["C/C++", "MPI", "Make"],
   },
+  //Stat 311 Statistical Computing in R
+  {
+    id: "rstat-statslab2-nycflights",
+    title: "NYC Flight Delays — Exploratory Analysis (R Lab 2)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "tidyverse", "ggplot2", "dplyr", "Data Wrangling"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab2.pdf",
+    description:
+      "Explored departure/arrival delays in the NYC flights dataset using tidyverse. Compared histograms with different bin counts, filtered and summarized routes (e.g., LAX-only delays), and created a February SFO subset to analyze medians/IQR by origin. Wrapped up by ranking months by average departure and arrival delays to surface seasonal patterns.",
+    skills: ["R", "tidyverse", "ggplot2"]
+  },
+  {
+    id: "rstat-statslab3-random-simulations",
+    title: "Random Simulations — Coins & Dice (R Lab 3)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "Simulation", "Random Sampling", "Probability", "Base R"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab3.pdf",
+    description:
+      "Simulated coin tosses and dice rolls in R to study sampling with and without replacement. Computed empirical proportions, sample variance, and standard deviation manually and via built-in R functions to validate formulas. Increased simulation size from 60 to 1000 rolls to observe convergence toward theoretical variance and reduced variability.",
+    skills: ["R", "Simulation", "Probability"]
+  },
+  {
+    id: "rstat-statslab4-kobe-fastfood",
+    title: "Hot Hand & Fast-Food Normality (R Lab 4)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "tidyverse", "ggplot2", "Probability", "Simulation", "EDA", "QQ Plot"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab4.pdf",
+    description:
+      "Analyzed Kobe Bryant’s 2009 Finals shot streaks with calc_streak and compared against an independent-shooter simulation (p=0.45), finding higher variance and mean streak length in the simulation and no ‘hot hand’. Then explored fast-food nutrition: histograms of calories from fat for McDonald’s vs. Dairy Queen, overlaid a normal curve using sample mean/SD, and used QQ plots/qqnormsim to assess normality.",
+    skills: ["R", "tidyverse", "ggplot2"]
+  },
+  {
+    id: "rstat-statslab5-sampling-distributions",
+    title: "Sampling Distributions & Population Proportions (R Lab 5)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "infer", "tidyverse", "Simulation", "Sampling", "Central Limit Theorem"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab5.pdf",
+    description:
+      "Simulated repeated random samples to study the sampling distribution of proportions using the infer and tidyverse packages. Estimated p-hat for beliefs about scientists’ work benefiting society and visualized 15,000 samples with histograms. Compared sampling distributions at n = 10, 50, and 100, showing that as sample size increases, the shape becomes more normal, the mean approaches the true population proportion (0.2), and the standard error decreases.",
+    skills: ["R", "tidyverse", "infer", "Simulation"]
+  },
+  {
+    id: "rstat-statslab6-texting-driving",
+    title: "Texting & Driving — Hypothesis Testing and Confidence Intervals (R Lab 6)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "infer", "Hypothesis Testing", "Confidence Intervals", "Proportions", "tidyverse"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab6.pdf",
+    description:
+      "Analyzed Youth Risk Behavior Survey (YRBSS) data to estimate the proportion of high schoolers who text while driving. Computed 99% and 95% confidence intervals for the true proportion using the infer package and visualized the margin of error as a function of population proportion. Conducted hypothesis tests (H₀: p=0.05) and found a p-value ≈ 0.00014, providing strong evidence that more than 5% of high schoolers text while driving.",
+    skills: ["R", "infer", "tidyverse", "Hypothesis Testing"]
+  },
+  {
+    id: "rstat-statslab7-weight-activity",
+    title: "Weight vs Physical Activity — Two-Sample Inference (R Lab 7)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "infer", "Hypothesis Testing", "t-test", "Data Visualization", "tidyverse"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab7.pdf",
+    description:
+      "Used the Youth Risk Behavior Survey (YRBSS) to test whether physically active high schoolers (≥3 days/week) weigh more than inactive peers. Created boxplots comparing groups, verified inference conditions, and ran two-sample t-tests using infer. Obtained a p-value ≈ 0.0002 for a two-sided test and 0.0001 for a one-sided alternative, leading to rejection of the null hypothesis at the 5% significance level.",
+    skills: ["R", "infer", "tidyverse", "Statistical Inference"]
+  },
+  {
+    id: "rstat-statslab8-linear-regression",
+    title: "Linear Regression — Personal Freedom vs Expression Control (R Lab 8)",
+    year: 2025,
+    topics: ["Statistical Computing", "R"],
+    tags: ["R", "Linear Regression", "tidyverse", "ggplot2", "Model Diagnostics"],
+    github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab8.pdf",
+    description:
+      "Performed simple linear regression on the Human Freedom Index dataset to model personal freedom (pf_score) as a function of expression control (pf_expression_control). Found a strong positive slope (0.54) and intercept (4.28), indicating higher freedom scores with greater expression control. Verified regression assumptions—linearity, normal residuals, and constant variance—through fitted vs. residual plots and histograms, confirming model validity.",
+    skills: ["R", "tidyverse", "ggplot2", "Regression Analysis"]
+  },              
 ];
 
 function classNames(...xs: Array<string | false | null | undefined>): string {
