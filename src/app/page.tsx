@@ -306,11 +306,11 @@ const PROJECTS: Project[] = [
     title: "Marginal Likelihood for Linear Regression (C/C++: LAPACK & GSL)",
     year: 2025,
     topics: ["Statistical Computing", "Systems"],
-    tags: ["C/C++", "LAPACK", "GSL", "Statistical Computing", "Makefiles", "Performance Optimization"],
+    tags: ["C/C++", "LAPACK", "GSL", "Statistical Computing", "Performance Optimization"],
     github: "https://github.com/VarunP3000/R-C-Stats-Projects/tree/main/Stat534Projects/hwk5",
     description:
       "Implemented two high-performance versions of the linear-model marginal likelihood in C/C++: one using LAPACKE and one using GSL. I engineered GEMM, identity-add, solve, and log-det computations with careful memory ownership and row/column-major handling. The implementations matched an R baseline and passed the spec check for a known subset.",
-    skills: ["C/C++", "LAPACK/LAPACKE", "GSL", "Make"],
+    skills: ["C/C++", "LAPACK/LAPACKE", "GSL"],
   },
   {
     id: "s534-hw6-rec-det-topk",
@@ -385,33 +385,33 @@ const PROJECTS: Project[] = [
     title: "Sampling Distributions & Population Proportions (R Lab 5)",
     year: 2025,
     topics: ["Statistical Computing", "R"],
-    tags: ["R", "infer", "tidyverse", "Probability and Statistics"],
+    tags: ["R", "tidyverse", "Probability and Statistics"],
     github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab5.pdf",
     description:
       "Simulated repeated random samples to study the sampling distribution of proportions using the infer and tidyverse packages. Estimated p-hat for beliefs about scientists’ work benefiting society and visualized 15,000 samples with histograms. Compared sampling distributions at n = 10, 50, and 100, showing that as sample size increases, the shape becomes more normal, the mean approaches the true population proportion (0.2), and the standard error decreases.",
-    skills: ["R", "tidyverse", "infer", "Simulation"]
+    skills: ["R", "tidyverse", "Simulation"]
   },
   {
     id: "rstat-statslab6-texting-driving",
     title: "Texting & Driving — Hypothesis Testing and Confidence Intervals (R Lab 6)",
     year: 2025,
     topics: ["Statistical Computing", "R"],
-    tags: ["R", "infer", "tidyverse", "Probability and Statistics"],
+    tags: ["R", "tidyverse", "Probability and Statistics"],
     github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab6.pdf",
     description:
       "Analyzed Youth Risk Behavior Survey (YRBSS) data to estimate the proportion of high schoolers who text while driving. Computed 99% and 95% confidence intervals for the true proportion using the infer package and visualized the margin of error as a function of population proportion. Conducted hypothesis tests (H₀: p=0.05) and found a p-value ≈ 0.00014, providing strong evidence that more than 5% of high schoolers text while driving.",
-    skills: ["R", "infer", "tidyverse", "Hypothesis Testing"]
+    skills: ["R", "tidyverse", "Hypothesis Testing"]
   },
   {
     id: "rstat-statslab7-weight-activity",
     title: "Weight vs Physical Activity — Two-Sample Inference (R Lab 7)",
     year: 2025,
     topics: ["Statistical Computing", "R"],
-    tags: ["R", "infer", "tidyverse", "Probability and Statistics"],
+    tags: ["R", "tidyverse", "Probability and Statistics"],
     github: "https://github.com/VarunP3000/RStatisticalComputing/blob/main/RStatisticalComputing/StatsLab7.pdf",
     description:
       "Used the Youth Risk Behavior Survey (YRBSS) to test whether physically active high schoolers (≥3 days/week) weigh more than inactive peers. Created boxplots comparing groups, verified inference conditions, and ran two-sample t-tests using infer. Obtained a p-value ≈ 0.0002 for a two-sided test and 0.0001 for a one-sided alternative, leading to rejection of the null hypothesis at the 5% significance level.",
-    skills: ["R", "infer", "tidyverse", "Statistical Inference"]
+    skills: ["R", "tidyverse", "Statistical Inference"]
   },
   {
     id: "rstat-statslab8-linear-regression",
