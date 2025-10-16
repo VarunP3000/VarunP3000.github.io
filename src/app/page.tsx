@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "pandas", "Machine Learning", "Git/GitHub"],
     github: "https://github.com/VarunP3000/ConfidenceScoringProject",
     description:
-      "Built an end-to-end pipeline that scores LLM outputs with calibrated confidence. I ingest CSVs into prompts, chain model calls, and compute confidence scores with tunable thresholds. I compare raw versus calibrated predictions using ECE and accuracy, and I support simple prompt/model ensembling. The system separates orchestration in Node.js from scoring in Python so results are reproducible and easy to extend.",
+      "Developed processes to integrate a chain of LLMs for data annotation, allowing users to input a set of prompts, select LLMs, and configure confidence thresholds and token limits. Developed an intuitive React web interface for file uploads using JavaScript, HTML, and CSS, enabling CSV file analysis. Implemented backend processes in Node.js (Express) and Python to manage API calls, LLM workflows, and confidence scoring.",
   },
   {
     id: "stock-fullstack-cpi-spx",
