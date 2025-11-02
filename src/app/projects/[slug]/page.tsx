@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import { projects } from "../../../lib/projects";
 
+export const dynamic = "error"; // ensure static only
+
 type Props = { params: { slug: string } };
+
+export function generateStaticParams() {
+  return projects.map((p) => ({ slug: p.slug }));
+}
 
 export function generateMetadata({ params }: Props) {
   const p = projects.find((x) => x.slug === params.slug);

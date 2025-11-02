@@ -24,7 +24,7 @@ export default function Page() {
           href="/Varun_Panuganti_OG_Resume.pdf"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
         >
-          View Résumé
+          View Resume
         </a>
       </div>
 
@@ -35,14 +35,6 @@ export default function Page() {
         <li className="h-1 w-1 rounded-full bg-zinc-400/70" />
         <li>Full-Stack (FastAPI • Next.js)</li>
       </ul>
-
-      {/* Accent block */}
-      <div className="mt-14 rounded-3xl border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
-        <h2 className="text-lg font-semibold">Currently</h2>
-        <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-          Building an LLM ensemble confidence scoring tool and a healthcare forecasting dashboard (readmission risk, LSTM COVID/flu, med demand).
-        </p>
-      </div>
     </section>
   );
 }
