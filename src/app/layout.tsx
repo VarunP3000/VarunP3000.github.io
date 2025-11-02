@@ -27,12 +27,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Sticky Nav */}
         <header className="sticky top-0 z-40 w-full border-b border-zinc-200/60 dark:border-zinc-800/60 bg-white/80 dark:bg-zinc-950/60 backdrop-blur">
           <div className="mx-auto max-w-6xl h-16 px-4 flex items-center justify-between">
-            <Link href="/" className="font-semibold tracking-tight">Varun<span className="opacity-60">.ai</span></Link>
+            <Link href="/" className="font-semibold tracking-tight">Home Page</Link>
             <nav className="flex items-center gap-1">
               <Link href="/" className="px-3 py-2 rounded-xl text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900">Welcome</Link>
               <Link href="/projects" className="px-3 py-2 rounded-xl text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900">Projects</Link>
               <a href="/Varun_Panuganti_OG_Resume.pdf" className="ml-1 px-3 py-2 rounded-xl text-sm border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900">
-                Résumé
+                Resume
               </a>
             </nav>
           </div>

@@ -9,8 +9,7 @@ export default function Page() {
       </h1>
 
       <p className="mt-5 max-w-2xl text-zinc-700 dark:text-zinc-300">
-        UW Informatics + ACMS (Data Science & Statistics). I focus on forecasting, confidence scoring,
-        and productionized analytics — from pipelines to dashboards.
+      My name is Varun Panuganti. I am a third year student at the University of Washington pursuing a double degree in ACMS (Data Science and Statistics) and Informatics. I am passionate about studying how data and mathematics can be used to make decisions. I am also driven to use my privilege and my experience to build accessible and informative products.
       </p>
 
       <div className="mt-7 flex flex-wrap gap-3">
