@@ -70,14 +70,14 @@ export default function ProjectCaseStudy({ params }: Props) {
       <section className="prose prose-zinc dark:prose-invert max-w-none">
         {p.problem && (
           <>
-            <h2>Problem & Motivation</h2>
+            <h2 className="text-lg font-bold mb-1">Problem & Motivation:</h2>
             <p>{p.problem}</p>
           </>
         )}
 
         {p.approach && (
           <>
-            <h2>Data & Approach</h2>
+            <h2 className="text-lg font-bold mb-1">Data & Approach:</h2>
             {Array.isArray(p.approach) ? (
               <ul>{p.approach.map((a, i) => <li key={i}>{a}</li>)}</ul>
             ) : (
@@ -88,7 +88,7 @@ export default function ProjectCaseStudy({ params }: Props) {
 
         {p.results && (
           <>
-            <h2>Results</h2>
+            <h2 className="text-lg font-bold mb-1">Results:</h2>
             {Array.isArray(p.results) ? (
               <ul>{p.results.map((r, i) => <li key={i}>{r}</li>)}</ul>
             ) : (
@@ -99,14 +99,14 @@ export default function ProjectCaseStudy({ params }: Props) {
 
         {p.limitations && (
           <>
-            <h2>Limitations</h2>
+            <h2 className="text-lg font-bold mb-1">Limitations:</h2>
             <p>{p.limitations}</p>
           </>
         )}
 
         {p.nextSteps && (
           <>
-            <h2>Next Steps</h2>
+            <h2 className="text-lg font-bold mb-1">Next Steps:</h2>
             {Array.isArray(p.nextSteps) ? (
               <ul>{p.nextSteps.map((n, i) => <li key={i}>{n}</li>)}</ul>
             ) : (
