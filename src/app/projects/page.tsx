@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-semibold">Projects</h1>
         <p className="mt-2 max-w-prose text-zinc-700 dark:text-zinc-300">
-          Quality over quantity — each project includes process, results, and limitations.
+        Here are my projects:
         </p>
       </header>
 
