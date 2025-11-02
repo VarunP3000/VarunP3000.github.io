@@ -5,7 +5,7 @@ export default function Page() {
     <section className="py-16 sm:py-24">
       <p className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Welcome</p>
       <h1 className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-        Hi, I’m Varun — I build end-to-end <span className="opacity-90">data & ML systems</span> that turn messy data into decisions.
+        About Me:
       </h1>
 
       <p className="mt-5 max-w-2xl text-zinc-700 dark:text-zinc-300">
