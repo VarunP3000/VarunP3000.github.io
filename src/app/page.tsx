@@ -27,7 +27,7 @@ export default function Page() {
         {/* Image block */}
         <div className="shrink-0">
           <Image
-            src="public/headshot.jpg" // file in /public
+            src="/headshot.jpg" // file in /public
             alt="Portrait of Varun Panuganti"
             width={220}
             height={220}
