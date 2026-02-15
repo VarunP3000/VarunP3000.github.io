@@ -70,7 +70,7 @@ export default function Page() {
         </a>
 
         <a
-          href="https://www.linkedin.com/feed/"
+          href="https://www.linkedin.com/in/varun-panuganti/"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
