@@ -43,11 +43,39 @@ export default function Page() {
         >
           Explore Projects
         </Link>
+
         <a
           href="/Varun_Panuganti_OG_Resume.pdf"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
         >
           View Resume
+        </a>
+
+        <a
+          href="/transcript.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
+        >
+          Transcript
+        </a>
+
+        <a
+          href="https://github.com/VarunP3000"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/feed/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
+        >
+          LinkedIn
         </a>
       </div>
 
