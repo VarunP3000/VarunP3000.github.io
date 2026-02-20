@@ -8,6 +8,7 @@ export type Project = {
   year?: string | number;
   repo?: string;
   live?: string;
+  featured?: boolean; // NEW
 };
 
 export function ProjectCard({ slug, title, summary, tags, year, repo, live }: Project) {
@@ -46,3 +47,4 @@ export function ProjectCard({ slug, title, summary, tags, year, repo, live }: Pr
     </article>
   );
 }
+

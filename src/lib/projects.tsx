@@ -42,6 +42,7 @@ export const projects: CaseStudyProject[] = [
     ],
     limitations:
       "State-level aggregation hides local patterns; weather bucketing simplifies rich categories; correlations can’t confirm causation.",
+      featured: true,
   },
   {
     slug: "llm-uncertainty-quantification",
@@ -66,6 +67,7 @@ export const projects: CaseStudyProject[] = [
     ],
     limitations:
       "Slow when many models are selected; model outputs can still be correlated since they’re trained on similar data.",
+      featured: true,
   },
   {
     slug: "stock-market-cpi-to-sp500-fullstack",
@@ -114,6 +116,7 @@ export const projects: CaseStudyProject[] = [
     ],
     limitations:
       "Survey is self-reported and snapshot-only (no temporal attributes), ERD vs physical design required some cardinality simplifications, and storing only a primary platform plus a fixed addiction cutoff reduces behavioral nuance.",
+      featured: true,
   },  
   // --- CSE 373 — DS&A (Java) ---
   {
@@ -379,7 +382,8 @@ export const projects: CaseStudyProject[] = [
       "For the US, housing costs and the S&P 500 both rise over the long run and sometimes move together (especially post-2012), but the relationship is non-linear and clearly influenced by distinct drivers (rates, demand, supply, etc.)."
     ],
     limitations:
-      "Correlation-only yearly aggregates (no causal identification); S&P 500 used as a single broad index with no sector breakdown; cross-country housing comparisons ignore purchasing-power differences; some cost-of-living and tax fields contain missing data that were averaged but not imputed, and external macro factors (rates, employment, policy regimes) were left out of the models."
+      "Correlation-only yearly aggregates (no causal identification); S&P 500 used as a single broad index with no sector breakdown; cross-country housing comparisons ignore purchasing-power differences; some cost-of-living and tax fields contain missing data that were averaged but not imputed, and external macro factors (rates, employment, policy regimes) were left out of the models.",
+    featured: true,
   },
   // --- STAT/BIOSTAT 534 — Statistical Computing (UW) ---
   {
