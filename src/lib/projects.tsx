@@ -196,7 +196,7 @@ export const projects: CaseStudyProject[] = [
   },
   {
     slug: "amath482-mnist-pca-classification",
-    title: "MNIST Classification with PCA and Classical ML",
+    title: "Classification of Handwritten Digits with PCA and Classical ML",
     summary:
       "Reduced MNIST images with PCA, reconstructed digits from truncated modes, and compared Ridge Classifier, Logistic Regression, and KNN across digit subsets and the full 10-class task.",
     tags: ["Python", "NumPy", "scikit-learn", "PCA", "Classification", "Logistic Regression", "KNN", "Ridge Classifier", "Matplotlib"],
