@@ -117,6 +117,132 @@ export const projects: CaseStudyProject[] = [
     limitations:
       "Survey is self-reported and snapshot-only (no temporal attributes), ERD vs physical design required some cardinality simplifications, and storing only a primary platform plus a fixed addiction cutoff reduces behavioral nuance.",
       featured: true,
+  },
+  // --- AMATH 482 — Mathematical Modeling / Scientific Computing (Python) ---
+  {
+    slug: "amath482-submarine-tracking-fourier-analysis",
+    title: "Submarine Tracking via 3D Fourier Analysis",
+    summary:
+      "Reconstructed the path of a moving submarine from 49 noisy acoustic-pressure measurements by identifying the dominant frequency in Fourier space and applying a 3D Gaussian filter to denoise each snapshot.",
+    tags: ["Python", "NumPy", "FFT", "Signal Processing", "Scientific Computing", "Plotly", "Matplotlib"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    problem:
+      "Given 49 noisy 3D acoustic measurements collected over 24 hours, recover the location and trajectory of a submarine emitting an unknown frequency.",
+    approach: [
+      "Computed 3D Fourier transforms for each measurement and averaged them to estimate the dominant acoustic frequency across time.",
+      "Built a 3D Gaussian filter centered at the dominant frequency to suppress broadly distributed Gaussian noise in frequency space.",
+      "Applied FFT → filter → inverse FFT to each measurement, then tracked the submarine by locating the maximum signal intensity in the denoised volume.",
+      "Visualized the dominant frequency and reconstructed submarine path in both 3D and XY-plane views using Plotly and Matplotlib."
+    ],
+    results: [
+      "Recovered a clear dominant frequency centered near (1.89, 5.34, -6.91) in frequency space.",
+      "Produced a smooth, interpretable 3D and 2D trajectory from the original noisy measurements.",
+      "Showed that frequency-domain denoising substantially improved localization of the submarine over time."
+    ],
+    limitations:
+      "Method assumes a stable dominant frequency and depends on Gaussian filter tuning; performance may degrade if the signal is not strongly frequency-localized or if multiple sources overlap.",
+    featured: true,
+  },
+  {
+    slug: "amath482-robot-motion-pca-classification",
+    title: "Robot Motion Classification with PCA",
+    summary:
+      "Built a low-dimensional representation of humanoid robot joint trajectories using PCA and classified movements as walking, running, or jumping using centroid-based classification in PCA space.",
+    tags: ["Python", "NumPy", "scikit-learn", "PCA", "Dimensionality Reduction", "Classification", "Plotly", "Matplotlib"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    problem:
+      "Given 3D joint recordings of a humanoid robot performing walking, running, and jumping, reduce the dimensionality of the trajectories while preserving enough structure to classify movement type.",
+    approach: [
+      "Combined 15 motion samples into a single matrix and centered the data before applying PCA.",
+      "Measured cumulative explained variance to determine how many principal modes preserved the original motion information efficiently.",
+      "Projected trajectories into 2D and 3D PCA spaces and computed class centroids for walking, running, and jumping.",
+      "Classified each trajectory by assigning it to the nearest centroid in truncated PCA space and compared train/test accuracy for k = 2 and k = 3 modes."
+    ],
+    results: [
+      "Found that fewer than 10 principal modes explained over 90% of the variance in the motion data.",
+      "Observed clear visual separation between walking, running, and jumping trajectories in both 2D and 3D PCA space.",
+      "Achieved 100% test accuracy for both k = 2 and k = 3, with k = 2 also giving stronger training accuracy (0.933 vs 0.800)."
+    ],
+    limitations:
+      "Small sample size and only three motion classes make the classification task relatively simple; centroid-based classification may not generalize to noisier or more diverse movement types.",
+    featured: true,
+  },
+  {
+    slug: "amath482-wine-quality-regression",
+    title: "Wine Quality Prediction with Regularized Regression",
+    summary:
+      "Predicted Portuguese wine quality from chemical features using first-order, quadratic, interaction-term, and Lasso-regularized linear models, with cross-validation used to select the best regularization strength.",
+    tags: ["Python", "NumPy", "scikit-learn", "Regression", "Lasso", "Cross Validation", "Feature Engineering"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    problem:
+      "Develop an accurate regression model for wine quality using 11 chemical measurements while controlling overfitting and identifying the features that matter most.",
+    approach: [
+      "Standardized training features and targets to make coefficient-based models and regularization methods numerically stable.",
+      "Trained and compared a first-order linear model, a quadratic model, a model with selected interaction terms, and a Lasso model with cross-validation.",
+      "Ranked features by coefficient magnitude to identify the most influential predictors and expanded the feature set with interaction terms among strong first-order predictors.",
+      "Used test MSE to compare models and selected the Lasso model by tuning alpha through cross-validation."
+    ],
+    results: [
+      "Identified volatile acidity, chlorides, total sulfur dioxide, sulphates, and alcohol as strong first-order predictors of wine quality.",
+      "Showed that adding quadratic terms alone did not improve performance, while interaction terms improved predictive power.",
+      "Achieved the best test performance with the Lasso + cross-validation model (test MSE 0.704), outperforming the first-order (0.747), quadratic (0.781), and all-terms linear model (0.718)."
+    ],
+    limitations:
+      "Model family remains linear in structure even with engineered terms, so it may miss more complex nonlinear relationships; results are also sensitive to the chosen interaction set and regularization strength.",
+    featured: true, 
+  },
+  {
+    slug: "amath482-mnist-pca-classification",
+    title: "MNIST Classification with PCA and Classical ML",
+    summary:
+      "Reduced MNIST images with PCA, reconstructed digits from truncated modes, and compared Ridge Classifier, Logistic Regression, and KNN across digit subsets and the full 10-class task.",
+    tags: ["Python", "NumPy", "scikit-learn", "PCA", "Classification", "Logistic Regression", "KNN", "Ridge Classifier", "Matplotlib"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    problem:
+      "Classify handwritten digits accurately while reducing dimensionality enough to preserve essential visual information and improve computational efficiency.",
+    approach: [
+      "Centered and normalized MNIST images, then applied PCA to determine the number of principal components needed to retain at least 85% of the dataset energy.",
+      "Visualized truncated principal modes and reconstructed digit images from the reduced basis to assess information preservation qualitatively.",
+      "Trained Ridge Classifier and Logistic Regression models on selected digit subsets and on all digits, using cross-validation to tune hyperparameters.",
+      "Trained a KNN classifier on the full dataset and selected the number of neighbors via cross-validation."
+    ],
+    results: [
+      "Found that 59 principal components were sufficient to retain about 85% of the energy in the dataset while still reconstructing recognizable digits.",
+      "Logistic Regression outperformed Ridge Classifier across all reported subsets, including 92.7% test accuracy on the full 10-class task.",
+      "KNN with 3 neighbors achieved the strongest full-dataset performance at 95.48% test accuracy."
+    ],
+    limitations:
+      "PCA reconstructions remained blurry, and the project focused on classical ML baselines rather than convolutional neural networks that typically perform better on image data.",
+    featured: true,
+  },
+  {
+    slug: "amath482-fashionmnist-neural-network-optimization",
+    title: "FashionMNIST Neural Network Optimization Study",
+    summary:
+      "Built a fully connected neural network for FashionMNIST and evaluated how optimizer choice, learning rate, weight initialization, and batch normalization affect convergence, validation accuracy, and test accuracy.",
+    tags: ["Python", "PyTorch", "Neural Networks", "Deep Learning", "Optimization", "FashionMNIST", "Matplotlib"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    problem:
+      "Train a reliable FashionMNIST classifier and systematically compare training behavior under different optimization and initialization choices.",
+    approach: [
+      "Implemented a baseline fully connected network with input dimension 784, hidden dimension 512, two hidden layers, SGD optimization, and 30 training epochs.",
+      "Compared SGD, RMSProp, and Adam under multiple learning rates by tracking final train loss, validation accuracy, and test accuracy.",
+      "Tested Random Normal, Xavier Normal, and Kaiming (He) Uniform initializations to evaluate their effects on convergence and generalization.",
+      "Added batch normalization and compared its training and generalization behavior against the baseline model."
+    ],
+    results: [
+      "Observed that Adam with learning rate 0.001 gave the strongest overall performance, reaching 90.59% validation accuracy and 89.16% test accuracy.",
+      "Found that Kaiming (He) Uniform was the best initializer among those tested, achieving 89.44% validation accuracy and 88.33% test accuracy.",
+      "Showed that batch normalization reduced final training loss substantially (0.0774 vs 0.2584 baseline) but slightly hurt validation and test accuracy, suggesting worse generalization in this setup."
+    ],
+    limitations:
+      "Experiments were limited to fully connected architectures rather than CNNs, and conclusions are specific to the tested hyperparameter ranges and training setup.",
+    featured: true,
   },  
   // --- CSE 373 — DS&A (Java) ---
   {
