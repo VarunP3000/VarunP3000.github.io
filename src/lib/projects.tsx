@@ -126,7 +126,7 @@ export const projects: CaseStudyProject[] = [
       "Reconstructed the path of a moving submarine from 49 noisy acoustic-pressure measurements by identifying the dominant frequency in Fourier space and applying a 3D Gaussian filter to denoise each snapshot.",
     tags: ["Python", "NumPy", "FFT", "Signal Processing", "Scientific Computing", "Plotly", "Matplotlib"],
     year: 2026,
-    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects/Project1",
     problem:
       "Given 49 noisy 3D acoustic measurements collected over 24 hours, recover the location and trajectory of a submarine emitting an unknown frequency.",
     approach: [
@@ -151,7 +151,7 @@ export const projects: CaseStudyProject[] = [
       "Built a low-dimensional representation of humanoid robot joint trajectories using PCA and classified movements as walking, running, or jumping using centroid-based classification in PCA space.",
     tags: ["Python", "NumPy", "scikit-learn", "PCA", "Dimensionality Reduction", "Classification", "Plotly", "Matplotlib"],
     year: 2026,
-    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects/Project2",
     problem:
       "Given 3D joint recordings of a humanoid robot performing walking, running, and jumping, reduce the dimensionality of the trajectories while preserving enough structure to classify movement type.",
     approach: [
@@ -176,7 +176,7 @@ export const projects: CaseStudyProject[] = [
       "Predicted Portuguese wine quality from chemical features using first-order, quadratic, interaction-term, and Lasso-regularized linear models, with cross-validation used to select the best regularization strength.",
     tags: ["Python", "NumPy", "scikit-learn", "Regression", "Lasso", "Cross Validation", "Feature Engineering"],
     year: 2026,
-    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects/Project3",
     problem:
       "Develop an accurate regression model for wine quality using 11 chemical measurements while controlling overfitting and identifying the features that matter most.",
     approach: [
@@ -201,7 +201,7 @@ export const projects: CaseStudyProject[] = [
       "Reduced MNIST images with PCA, reconstructed digits from truncated modes, and compared Ridge Classifier, Logistic Regression, and KNN across digit subsets and the full 10-class task.",
     tags: ["Python", "NumPy", "scikit-learn", "PCA", "Classification", "Logistic Regression", "KNN", "Ridge Classifier", "Matplotlib"],
     year: 2026,
-    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects/Project4",
     problem:
       "Classify handwritten digits accurately while reducing dimensionality enough to preserve essential visual information and improve computational efficiency.",
     approach: [
@@ -226,7 +226,7 @@ export const projects: CaseStudyProject[] = [
       "Built a fully connected neural network for FashionMNIST and evaluated how optimizer choice, learning rate, weight initialization, and batch normalization affect convergence, validation accuracy, and test accuracy.",
     tags: ["Python", "PyTorch", "Neural Networks", "Deep Learning", "Optimization", "FashionMNIST", "Matplotlib"],
     year: 2026,
-    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects",
+    repo: "https://github.com/VarunP3000/Mathematical-Modeling-Projects/tree/main/AMATH%20482%20Projects/Project5",
     problem:
       "Train a reliable FashionMNIST classifier and systematically compare training behavior under different optimization and initialization choices.",
     approach: [
