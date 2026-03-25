@@ -579,5 +579,6 @@ export const projects: CaseStudyProject[] = [
       "Deterministic logs and correct match rules; portable build with mpic++.",
     ],
     limitations: "No network failures; simplified rally model.",
+    featured: true
   },
 ];
