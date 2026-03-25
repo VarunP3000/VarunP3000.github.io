@@ -100,7 +100,7 @@ export const projects: CaseStudyProject[] = [
       "Designed a normalized SQL Server schema and analytic queries to study how student social media use relates to sleep, mental health, relationships, and academics.",
     tags: ["SQL Server", "T-SQL", "Database Design", "ERD", "Data Modeling"],
     year: 2025,
-    repo: "https://github.com/<your-username>/SocialMediaRelationships", // TODO: replace with actual repo URL
+    repo: "https://github.com/VarunP3000/Student-Addiction-Data-Analysis", // TODO: replace with actual repo URL
     problem:
       "Model and query student wellness data (social media usage, sleep, mental health, relationships, demographics) to uncover patterns in digital addiction.",
     approach: [
