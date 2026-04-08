@@ -581,4 +581,30 @@ export const projects: CaseStudyProject[] = [
     limitations: "No network failures; simplified rally model.",
     featured: true
   },
+  {
+    slug: "spotify-song-popularity-regression",
+    title: "Spotify Song Popularity — Regression & Statistical Modeling",
+    summary:
+      "Analyzed 32K+ Spotify tracks to model song popularity using regression, cross-validation, and statistical testing; showed that feature importance varies significantly across genres.",
+    tags: ["Python", "pandas", "scikit-learn", "statsmodels", "Regression", "Statistical Modeling"],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Stat391FinalProject",
+    live: "",
+    problem:
+      "Determine which audio features (danceability, energy, valence, etc.) drive song popularity and whether these relationships are consistent across genres.",
+    approach: [
+      "Cleaned and sampled a 32K+ song dataset, removed irrelevant features, and encoded genres for modeling.",
+      "Built multiple regression models (audio-only, audio + genre, full) and evaluated using K-fold CV, RMSE, AIC, and adjusted R².",
+      "Performed statistical validation (residual analysis, QQ plots, VIF) and compared pooled vs per-genre models using an F-test.",
+    ],
+    results: [
+      "Full model achieved best performance (RMSE ≈ 24.68) but explained only ~10% of variance, indicating missing external factors.",
+      "Identified key relationships: energy negatively correlated with popularity, danceability strongly positive in Rap/Pop, valence varies by genre.",
+      "F-test (p < 0.0001) showed genre-specific models significantly outperform global models.",
+      "report link: https://github.com/VarunP3000/Stat391FinalProject/blob/main/Final_Report.pdf"
+    ],
+    limitations:
+      "Low explanatory power due to missing external factors (e.g., artist influence, trends); some heteroscedasticity and non-normal residuals observed.",
+    featured: true,
+  },
 ];
