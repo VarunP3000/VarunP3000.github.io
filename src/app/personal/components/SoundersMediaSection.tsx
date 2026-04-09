@@ -26,18 +26,6 @@ export default function SoundersMediaSection() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="overflow-hidden rounded-2xl border border-gray-200">
-              <video controls className="h-full w-full">
-                <source src="/videos/Sounders_chants.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-gray-200">
-              <video controls className="h-full w-full">
-                <source src="/videos/LeagueCupCelebrations.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
           </div>
         </div>
       </section>
