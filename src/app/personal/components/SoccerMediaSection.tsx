@@ -35,10 +35,11 @@ export default function SoccerMediaSection() {
 
           {/* Highlight Reel (MAIN FOCUS) */}
           <div className="overflow-hidden rounded-2xl border border-gray-200">
-            <video controls className="w-full">
-              <source src="/videos/SoccerHighlights.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+                src="https://www.youtube.com/embed/mHnRjoRRgHM"
+                className="w-full aspect-video"
+                allowFullScreen
+            />
           </div>
   
         </div>
