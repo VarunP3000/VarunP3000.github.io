@@ -9,16 +9,13 @@ export default function RunningMediaSection() {
             <h2 className="text-2xl font-semibold md:text-3xl">
               Running Experience
             </h2>
-            <p className="max-w-3xl text-base leading-7 text-gray-600">
-              Use this section for your race footage and running photos.
-            </p>
           </div>
   
           <div className="grid gap-6 md:grid-cols-2">
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
               <img
-                src="/images/track-photo.jpg"
+                src="/images/track_photo.jpg"
                 alt="Running mid-race"
                 className="h-full w-full object-cover"
               />
