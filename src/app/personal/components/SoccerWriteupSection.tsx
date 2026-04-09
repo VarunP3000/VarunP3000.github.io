@@ -10,7 +10,9 @@ export default function SoccerWriteupSection() {
             <div className="md:col-span-9">
               <div className="rounded-2xl border border-gray-200 p-6 md:p-8">
                 <p className="text-base leading-8 text-gray-700">
-                  Add your soccer writeup here.
+                I have played competitive soccer since I was 8 years old, including time with ISC Gunners and Eastside FC. 
+                Through this experience, I developed strong collaboration skills and the ability to make decisions under pressure. 
+                One of the most meaningful moments in my experience was winning the Washington State Cup, which reflected a culmination of years of effort and discipline.
                 </p>
               </div>
             </div>

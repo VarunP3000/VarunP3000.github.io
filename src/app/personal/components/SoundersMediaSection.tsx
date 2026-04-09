@@ -9,9 +9,6 @@ export default function SoundersMediaSection() {
             <h2 className="text-2xl font-semibold md:text-3xl">
               Love for the Sounders
             </h2>
-            <p className="max-w-3xl text-base leading-7 text-gray-600">
-              Use this section for Sounders-related pictures or videos.
-            </p>
           </div>
   
           <div className="grid gap-6 md:grid-cols-2">
