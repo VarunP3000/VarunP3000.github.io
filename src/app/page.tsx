@@ -44,6 +44,13 @@ export default function Page() {
           Explore Projects
         </Link>
 
+        <Link
+          href="/personal"
+          className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
+        >
+          Personal
+        </Link>
+
         <a
           href="/Varun_Panuganti_OG_Resume.pdf"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
