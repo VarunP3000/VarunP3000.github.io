@@ -52,10 +52,17 @@ export default function Page() {
         </Link>
 
         <a
-          href="/Varun_Panuganti_OG_Resume.pdf"
+          href="/Varun_Panuganti_Software_Engineering_Resume.pdf"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
         >
-          View Resume
+          Software Engineering Resume
+        </a>
+
+        <a
+          href="/Varun_Panuganti_Data_Science_Resume.pdf"
+          className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
+        >
+          Data Science Resume
         </a>
 
         <a
