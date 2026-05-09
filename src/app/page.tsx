@@ -51,7 +51,7 @@ export default function Page() {
           Personal
         </Link>
 
-        <a
+        {/* <a
           href="/Varun_Panuganti_Software_Engineering_Resume.pdf"
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
         >
@@ -63,7 +63,7 @@ export default function Page() {
           className="rounded-2xl border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground/5 transition"
         >
           Data Science Resume
-        </a>
+        </a> */}
 
         <a
           href="/transcript.pdf"
