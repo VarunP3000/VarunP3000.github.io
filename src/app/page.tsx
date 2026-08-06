@@ -113,13 +113,15 @@ export default function Home() {
           <p className="intro">I study machine learning and data science at the University of Washington, with a focus on NLP, model evaluation, and useful research tools.</p>
           <div className="hero-actions">
             <a className="primary-link" href="#experience">View my experience</a>
-            <a className="text-link" href="mailto:hello@example.com">Get in touch <Arrow /></a>
+            <a className="text-link" href="varunpanu30@gmail.com">Get in touch <Arrow /></a>
           </div>
         </div>
-        <div className="hero-photo" role="img" aria-label="Placeholder for a portrait of Varun">
-          <span>PORTRAIT</span>
-          <div className="portrait-mark">VP</div>
-          <p>Replace with your photo</p>
+        <div className="hero-photo">
+          <img
+            src="/headshot.jpg"
+            alt="Portrait of Varun"
+            className="hero-image"
+          />
         </div>
       </header>
 
@@ -141,17 +143,37 @@ export default function Home() {
               <p className="place">{item.place}</p>
 
               {item.id === "reu" && (
-                <div className="certificate-grid" aria-label="REU certificate photo placeholders">
-                  <div className="photo-placeholder"><span>PHOTO 01</span><strong>Certificate moment</strong><small>Drop your personal photo here</small></div>
-                  <div className="photo-placeholder second"><span>PHOTO 02</span><strong>REU completion</strong><small>Drop your personal photo here</small></div>
+                <div className="certificate-grid">
+                  <img
+                    src="/REUCertificatePhoto.png"
+                    alt="Varun holding his REU certificate"
+                    className="certificate-image"
+                  />
+                  <img
+                    src="/REUGroupPic.png"
+                    alt="REU group photo"
+                    className="certificate-image"
+                  />
                 </div>
               )}
 
-              {item.placeholderLabel && (
-                <div className="image-placeholder" role="img" aria-label={`Placeholder for ${item.placeholderLabel}`}>
-                  <span>IMAGE PLACEHOLDER</span>
-                  <strong>{item.placeholderLabel}</strong>
-                  <small>Replace with your image</small>
+              {item.id === "ta" && (
+                <div className="experience-image">
+                  <img
+                    src="/UWCampus.png"
+                    alt="University of Washington campus"
+                    className="experience-image-file campus-image"
+                  />
+                </div>
+              )}
+
+              {item.id === "icode" && (
+                <div className="experience-image">
+                  <img
+                    src="/iCode_Logo.jpg"
+                    alt="iCode logo"
+                    className="experience-image-file logo-image"
+                  />
                 </div>
               )}
 
@@ -174,7 +196,9 @@ export default function Home() {
       <footer id="contact">
         <p className="eyebrow">CONTACT</p>
         <h2>Let’s talk.</h2>
-        <a href="mailto:hello@example.com">hello@example.com <Arrow /></a>
+        <a href="mailto:varunpanu30@gmail.com">
+          varunpanu30@gmail.com <Arrow />
+        </a>
         <p className="fineprint">Portfolio · 2026</p>
       </footer>
     </main>
