@@ -14,7 +14,7 @@ const experiences = [
     ],
     links: [
       { label: "Research repository", href: "https://github.com/VarunP3000/NFS-REU-Data-Analytics-2026" },
-      { label: "2026 REU program", href: "https://www.marshall.edu/reu/2026-research-projects/" },
+      { label: "2026 REU program", href: "https://www.marshall.edu/reu/2026-gallery/" },
     ],
     metric: { big: "15M+", label: "reviews labeled" },
     accent: "lime",

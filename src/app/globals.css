@@ -19,7 +19,6 @@ h1 em, footer em { font-family:Georgia,serif; font-weight:400; }
 .primary-link { background:#e9e0ee; color:#211827; padding:13px 18px; text-decoration:none; font-size:12px; font-weight:800; }
 .text-link { color:var(--muted); text-decoration:none; font-size:13px; font-weight:700; }
 .hero-photo { aspect-ratio:4/5; border:1px solid var(--line); background:linear-gradient(145deg,#30263a,#211a28); display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; overflow:hidden; }
-.hero-photo:before { content:""; position:absolute; width:70%; aspect-ratio:1; border-radius:50%; background:#493651; opacity:.7; }
 .hero-photo>span { position:absolute; top:18px; left:20px; font-size:10px; font-weight:800; letter-spacing:.15em; color:var(--muted); }
 .portrait-mark { z-index:1; font:italic 72px Georgia,serif; color:#d7c8de; }
 .hero-photo p { position:absolute; bottom:17px; margin:0; color:var(--muted); font:italic 14px Georgia,serif; }
@@ -50,7 +49,7 @@ h1 em, footer em { font-family:Georgia,serif; font-weight:400; }
 .project-links a { background:#e2d8e7; color:#211827; padding:12px 15px; text-decoration:none; font-size:11px; font-weight:800; transition:background .2s; }
 .project-links a:hover { background:#cdbbd5; }
 .image-placeholder { margin:38px 0 0; min-height:340px; overflow:hidden; border:1px dashed var(--ink); background:linear-gradient(135deg,rgba(255,255,255,.28),rgba(91,32,130,.16)); display:flex; flex-direction:column; justify-content:flex-end; padding:24px; position:relative; isolation:isolate; }
-.image-placeholder:before,.image-placeholder:after { content:""; position:absolute; border-radius:50%; border:1px solid currentColor; z-index:-1; }
+.image-placeholder:before,.image-placeholder:after { content: none; }
 .image-placeholder:before { width:250px; height:250px; right:8%; top:-70px; background:rgba(255,255,255,.12); }
 .image-placeholder:after { width:120px; height:120px; left:12%; top:70px; }
 .image-placeholder span { position:absolute; top:20px; left:22px; font-size:10px; font-weight:900; letter-spacing:.16em; }
@@ -156,4 +155,8 @@ footer>a { align-self:flex-start; padding-bottom:8px; border-bottom:1px solid cu
   .experience-image-file {
     height: 260px;
   }
+}
+.hero-photo::before {
+  content: none !important;
+  display: none !important;
 }
