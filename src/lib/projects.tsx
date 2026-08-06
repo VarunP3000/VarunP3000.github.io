@@ -243,6 +243,40 @@ export const projects: CaseStudyProject[] = [
     limitations:
       "Experiments were limited to fully connected architectures rather than CNNs, and conclusions are specific to the tested hyperparameter ranges and training setup.",
     featured: true,
+  },
+  {
+    slug: "soccer-player-performance-analysis",
+    title: "Soccer Player Performance & Market Value Analysis",
+    summary:
+      "Analyzed player statistics across Europe’s top 5 soccer leagues to study how age, positional versatility, league strength, and technical ability influence player performance and market value.",
+    tags: [
+      "Python",
+      "Tableau",
+      "Data Visualization",
+      "Statistical Analysis",
+      "Feature Engineering",
+      "Sports Analytics",
+      "Pandas"
+    ],
+    year: 2026,
+    repo: "https://github.com/VarunP3000/Soccer-Player-Analysis",
+    problem:
+      "Given player performance data from Europe’s top football leagues, determine how technical abilities, age, league quality, and positional characteristics relate to market value and overall player performance.",
+    approach: [
+      "Engineered composite metrics for attacking, defending, passing, and dribbling ability using advanced football statistics.",
+      "Standardized and combined multiple performance metrics into a normalized total ability score to compare players across leagues and positions.",
+      "Built Tableau visualizations to analyze relationships between age, playing time, positional versatility, market value, and league-level player quality.",
+      "Compared performance trends across the Premier League, Bundesliga, La Liga, Serie A, and Ligue 1 to identify tactical and stylistic differences."
+    ],
+    results: [
+      "Observed that versatile players with strong nontraditional positional skills often had higher market values.",
+      "Found that the Premier League showed the highest overall standardized player ability, while the Bundesliga led in attacking metrics.",
+      "Identified age-related performance and playing time trends, with most players peaking between ages 23–35.",
+      "Demonstrated how normalization and feature aggregation can compress large multi-variable sports datasets into interpretable performance indicators."
+    ],
+    limitations:
+      "The analysis only uses data from the 2019–2020 season and relies on handcrafted aggregate metrics, which may not fully capture tactical context or long-term player development trends.",
+    featured: true,
   },  
   // --- CSE 373 — DS&A (Java) ---
   {
