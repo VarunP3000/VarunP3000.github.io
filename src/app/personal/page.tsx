@@ -11,7 +11,7 @@ export default function PersonalPage() {
       <PersonalHero />
       <SoccerWriteupSection />
       <RunningWriteupSection />
-      <SoundersMediaSection />
+      {/* <SoundersMediaSection /> */}
       <RunningMediaSection />
       <SoccerMediaSection />
     </main>
