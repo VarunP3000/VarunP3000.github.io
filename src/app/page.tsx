@@ -8,9 +8,9 @@ const experiences = [
     kicker: "Cross-domain emotion analytics for NLP",
     tools: ["Python", "PyTorch", "scikit-learn", "H200 GPUs"],
     facts: [
-      "Co-authoring an IEEE-format manuscript benchmarking five emotion-annotated text datasets, including GoEmotions, SemEval, and MELD.",
-      "Labeled 15M+ RateMyProfessor reviews with a six-model ensemble and a 3-of-6 voting rule, sharded across three H200 GPUs in under one hour.",
-      "Ran 2,400 grouped cross-validation fits across 490K texts; logistic regression beat RoBERTa on both multi-label datasets while training 111–185× faster.",
+      "Co-authored a peer-reviewed paper accepted for publication at EUSPN 2026, benchmarking 5 emotion-annotated text datasets across social media, dialogue, and educational domains to study emotion representation and cross-domain generalization.",
+      "Designed and executed a large-scale experimental pipeline comparing classical machine learning and transformer models across multiple datasets, using repeated grouped cross-validation and standardized evaluation metrics to ensure reproducible results.",
+      "Built scalable NLP and data-processing workflows for 15M+ text samples, combining distributed GPU inference, ensemble modeling, and statistical analysis to evaluate model performance, efficiency, and label behavior.",
     ],
     links: [
       { label: "Research repository", href: "https://github.com/VarunP3000/NFS-REU-Data-Analytics-2026" },
