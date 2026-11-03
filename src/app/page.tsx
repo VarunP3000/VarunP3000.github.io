@@ -1,5 +1,23 @@
 const experiences = [
   {
+    id: "avian",
+    years: "August 2026 — Present",
+    role: "Research Development Lead",
+    org: "Avian Impact · Flightbeat Application",
+    place: "Seattle, Washington",
+    kicker: "Turning bird collision data into actionable research insights",
+    tools: ["Python", "Firebase Firestore", "JavaScript", "React", "HTML/CSS"],
+    facts: [
+      "Developed Python-based data pipelines to retrieve and analyze bird collision records from Firebase Firestore, generating user-specific statistics and visualizations.",
+      "Built React-based research dashboards displaying collision trends, species distributions, and geospatial insights to support bird collision research.",
+      "Contributed to application usability by designing instructional screens and debugging authentication issues through Git history analysis.",
+    ],
+    links: [],
+    metric: { big: "Flightbeat", label: "Bird collision research platform" },
+    accent: "blue",
+    placeholderLabel: "Flightbeat research dashboard",
+  },
+  {
     id: "climate",
     years: "July — August 2026",
     role: "Machine Learning Researcher",
@@ -26,7 +44,7 @@ const experiences = [
     kicker: "Cross-domain emotion analytics for NLP",
     tools: ["Python", "PyTorch", "scikit-learn", "H200 GPUs"],
     facts: [
-      "Co-authored a peer-reviewed paper accepted for publication at EUSPN 2026, benchmarking 5 emotion-annotated text datasets across social media, dialogue, and educational domains to study emotion representation and cross-domain generalization.",
+      "First authored a peer-reviewed paper accepted for publication at EUSPN 2026, benchmarking 5 emotion-annotated text datasets across social media, dialogue, and educational domains to study emotion representation and cross-domain generalization.",
       "Designed and executed a large-scale experimental pipeline comparing classical machine learning and transformer models across multiple datasets, using repeated grouped cross-validation and standardized evaluation metrics to ensure reproducible results.",
       "Built scalable NLP and data-processing workflows for 15M+ text samples, combining distributed GPU inference, ensemble modeling, and statistical analysis to evaluate model performance, efficiency, and label behavior.",
     ],
@@ -142,6 +160,16 @@ export default function Home() {
               <h3>{item.role}</h3>
               <p className="org">{item.org}</p>
               <p className="place">{item.place}</p>
+
+              {item.id === "avian" && (
+                <div className="experience-image">
+                  <img
+                    src="/AvianImpact.png"
+                    alt="Avian Impact Flightbeat application"
+                    className="experience-image-file logo-image"
+                  />
+                </div>
+              )}
 
               {item.id === "reu" && (
                 <div className="certificate-grid">
